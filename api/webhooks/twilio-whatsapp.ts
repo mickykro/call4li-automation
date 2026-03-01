@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleIncomingMessage } from '../lib/forli/engine.js';
+import { handleIncomingMessage } from '../_lib/forli/engine.js';
 
 /**
  * Green API WhatsApp Webhook — Handles incoming WhatsApp messages

@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { getFirestore } from '../lib/firebase-admin.js';
+import { getFirestore } from '../_lib/firebase-admin.js';
 
 /**
  * GET /api/conversations/[id] — Get conversation with messages
