@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "firebase": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "ad20f8bb48be921374c48fc29a4034be0e4074d6d90d2d68b0180c8d8c0c039b"
+    }
+  }
+}
