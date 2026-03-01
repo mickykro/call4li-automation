@@ -1,9 +1,9 @@
-import { getFirestore } from '../firebase-admin';
-import { detectLanguage, getGreeting } from './language';
-import { parseTime } from './time-parser';
-import { searchKnowledge } from './knowledge';
-import { detectRole } from './roles';
-import { analyzeMessage } from './gemini';
+import { getFirestore } from '../firebase-admin.js';
+import { detectLanguage, getGreeting } from './language.js';
+import { parseTime } from './time-parser.js';
+import { searchKnowledge } from './knowledge.js';
+import { detectRole } from './roles.js';
+import { analyzeMessage } from './gemini.js';
 import type { Firestore } from 'firebase-admin/firestore';
 import { FieldValue } from 'firebase-admin/firestore';
 

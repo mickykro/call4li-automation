@@ -1,7 +1,7 @@
 import { config as loadEnv } from 'dotenv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleIncomingMessage } from '../lib/forli/engine';
-import { detectLanguage, getGreeting } from '../lib/forli/language';
+import { handleIncomingMessage } from '../lib/forli/engine.js';
+import { detectLanguage, getGreeting } from '../lib/forli/language.js';
 
 loadEnv();
 

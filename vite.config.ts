@@ -43,12 +43,14 @@ const devApiProxy = {
 
     server.middlewares.use('/api/auth/verify-otp', (req: any, res: any, next: any) => {
       if (req.method !== 'POST') return next()
-      return runHandler('/api/auth/verify-otp', req, res, () => import('./api/auth/verify-otp'))
+      req.query = { ...req.query, action: 'verify-otp' }
+      return runHandler('/api/auth/verify-otp', req, res, () => import('./api/auth/[action]'))
     })
 
     server.middlewares.use('/api/auth/request-otp', (req: any, res: any, next: any) => {
       if (req.method !== 'POST') return next()
-      return runHandler('/api/auth/request-otp', req, res, () => import('./api/auth/request-otp'))
+      req.query = { ...req.query, action: 'request-otp' }
+      return runHandler('/api/auth/request-otp', req, res, () => import('./api/auth/[action]'))
     })
   },
 }

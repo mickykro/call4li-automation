@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { getFirestore } from '../lib/firebase-admin';
+import { getFirestore } from '../lib/firebase-admin.js';
 
 /**
  * POST /api/callbacks/schedule
